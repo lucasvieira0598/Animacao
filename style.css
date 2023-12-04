@@ -1,0 +1,86 @@
+body{background-color: rgb(5, 5, 5)}
+
+#BarraNavegacao{
+    background-color: rgb(140, 140, 140);
+    width: 100%;
+    height: 10vh;
+    margin-left: 0vh;
+    margin-top: 0vh;
+}
+#BarraNavegacao h1{
+    text-align: center;
+    font-size: 5vh;
+    padding: 2vh;
+}
+.descricao{
+    background-color: rgb(140, 140, 140);
+    height: 30vh;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20vh;
+}
+.descricao h4{
+    padding: 8vh;
+    text-align: center;
+}
+
+#caixa01{height: 10vh;
+    width: 10vh; 
+    background-color: rgb(228, 2, 2); 
+    margin-left: 0vh; 
+    margin-top: 2vh; 
+    animation-delay: 0.2s;}
+    
+
+#caixa02{height: 10vh;
+    width: 10vh;
+    background-color: rgb(2, 228, 2);
+    margin-left: 0vh; 
+    margin-top: 2vh; 
+    animation-delay: 0.2s;}
+
+#caixa03{height: 10vh;
+    width: 10vh;
+    background-color: rgb(2, 2, 228);
+    margin-left: 0vh; 
+    margin-top: 2vh; 
+    animation-delay: 0.2s;}
+
+.container-base{margin-left: 4vh;
+    height: 30vh;
+    width: 100%;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;}
+    
+
+.AnimationMove:focus{
+    animation-name: Andar;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+
+@keyframes Andar
+{
+   from{margin-left: 0vh;}
+   
+   to{margin-left: 100vh;
+    border-radius: 40vh;
+    background-color: rgb(255, 77, 107);}
+}
+footer{
+    background-color: rgb(140, 140, 140);
+    width: 100%;
+    height: 35vh;
+    margin-left: 0vh;
+    margin-top: 50vh;
+}
+footer h2{
+font-size: 3vh;
+text-align: center;
+padding: 15vh;
+}
